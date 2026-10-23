@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
         SetCountText();
         winTextObject.SetActive(false);
 
-        deadPartical = transform.Find("ParticalDead")?.GetComponent<ParticleSystem>();
+        deadPartical = transform.Find("DeadPartical")?.GetComponent<ParticleSystem>();
         dustPartical = transform.Find("DustPartical")?.GetComponent<ParticleSystem>();
 
         if (dustPartical != null)
