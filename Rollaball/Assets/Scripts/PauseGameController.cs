@@ -3,6 +3,11 @@ using UnityEngine;
 public class PauseGameController : MonoBehaviour
 {
     private bool isPause = false;        // переменная для управления состоянием паузы
+
+    private void Start()
+    {
+        PauseOrResume();
+    }
     public void PauseOrResume()
     {
         if (isPause)
