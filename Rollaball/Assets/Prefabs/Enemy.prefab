@@ -52,7 +52,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 2
+  m_Height: 1
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1f85b636917fc840ba8f5e8d028d6cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
-  player: {fileID: 419403364826601810, guid: 15cd77787fa07c349af5c03db3263282, type: 3}
+  player: {fileID: 3839407914051920114, guid: 15cd77787fa07c349af5c03db3263282, type: 3}
 --- !u!1 &5420038268369133008
 GameObject:
   m_ObjectHideFlags: 0
