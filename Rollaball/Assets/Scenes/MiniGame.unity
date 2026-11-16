@@ -3721,13 +3721,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1508201424}
   - component: {fileID: 1508201425}
+  - component: {fileID: 1508201426}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1508201424
 Transform:
   m_ObjectHideFlags: 0
@@ -3764,6 +3765,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1508201426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508201423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 570a1593a1cef7d43999455199ee6848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlatformController
+  player: {fileID: 359361869}
 --- !u!1 &1578039612
 GameObject:
   m_ObjectHideFlags: 0
@@ -4463,6 +4477,7 @@ GameObject:
   - component: {fileID: 2003981142}
   - component: {fileID: 2003981141}
   - component: {fileID: 2003981140}
+  - component: {fileID: 2003981145}
   m_Layer: 6
   m_Name: PlatformBody
   m_TagString: Untagged
@@ -4585,6 +4600,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1292499477}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2003981145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003981139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 570a1593a1cef7d43999455199ee6848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlatformController
+  player: {fileID: 5409834473553575380, guid: 15cd77787fa07c349af5c03db3263282, type: 3}
 --- !u!1 &2083493561
 GameObject:
   m_ObjectHideFlags: 0
