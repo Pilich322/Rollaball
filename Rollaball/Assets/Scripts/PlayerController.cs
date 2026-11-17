@@ -10,10 +10,8 @@ public class PlayerController : MonoBehaviour
     private float movementY;
     private int count = 0;
     public float speed = 0;
-
     private ParticleSystem dustPartical;
     private ParticleSystem deadPartical;
-
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
     public AudioClip winClip;
@@ -25,16 +23,13 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         SetCountText();
         winTextObject.SetActive(false);
-
         deadPartical = transform.Find("DeadPartical")?.GetComponent<ParticleSystem>();
         dustPartical = transform.Find("DustPartical")?.GetComponent<ParticleSystem>();
-
         if (dustPartical != null)
         {
             dustPartical.Stop();
         }
     }
-
     void OnMove(InputValue movementValue)
     {
         Vector2 movementVector = movementValue.Get<Vector2>();
@@ -73,6 +68,7 @@ public class PlayerController : MonoBehaviour
         {
             winTextObject.SetActive(true);
             SoundManager.Instance.PlaySound(winClip);
+            winTextObject.GetComponent<TextMeshProUGUI>().text = "You Win!";
             Destroy(GameObject.FindGameObjectWithTag("Enemy"));
         }
     }
