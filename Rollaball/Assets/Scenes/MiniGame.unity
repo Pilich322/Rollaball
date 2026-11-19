@@ -3239,7 +3239,11 @@ PrefabInstance:
     - target: {fileID: 627453489270077956, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 359361872}
+      objectReference: {fileID: 359361869}
+    - target: {fileID: 627453489270077956, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
+      propertyPath: zoneAreaValue
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 796652407307068396, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.956555
