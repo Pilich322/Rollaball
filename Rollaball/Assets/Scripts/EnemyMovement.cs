@@ -1,5 +1,6 @@
 using UnityEngine.AI;
 using UnityEngine;
+using Unity.VisualScripting;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -32,9 +33,29 @@ public class EnemyMovement : MonoBehaviour
     {
         // ѕосто€нно передаем текущую скорость в Animator (даже когда враг останавливаетс€)
         animator.SetFloat(Velocity, agent.velocity.magnitude);
+        if(player.IsDestroyed())
+        {
+            animator.SetBool(PlayerIsDead, true);
+        }
         if (isChasing && player != null)
         {
             agent.SetDestination(player.transform.position);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == player.gameObject.tag)
+        {
+            animator.SetBool(TuchPlayer, true);
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.tag == player.gameObject.tag)
+        {
+            animator.SetBool(TuchPlayer, false);
         }
     }
 
